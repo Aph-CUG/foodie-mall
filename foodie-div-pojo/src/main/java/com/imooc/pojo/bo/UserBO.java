@@ -3,6 +3,7 @@ package com.imooc.pojo.bo;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 
+
 @ApiModel(value = "用户对象BO", description = "从客户端，由用户传入的数据封装在次entity中")
 public class UserBO {
 
