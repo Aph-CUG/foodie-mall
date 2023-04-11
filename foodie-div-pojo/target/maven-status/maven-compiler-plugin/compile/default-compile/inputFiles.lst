@@ -3,6 +3,7 @@ D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\Category.ja
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\Users.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\vo\CategoryVO.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\Carousel.java
+D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\vo\CommentLevelCountsVO.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\vo\ItemInfoVO.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\ItemsImg.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\Stu.java
@@ -14,6 +15,7 @@ D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\ItemsCommen
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\UserAddress.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\OrderStatus.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\vo\SimpleItemVO.java
+D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\vo\ItemCommentVO.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\OrderItems.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\ItemsSpec.java
 D:\Projects\imooc_merge\foodie-div-pojo\src\main\java\com\imooc\pojo\vo\SubCategoryVO.java
