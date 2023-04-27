@@ -1,3 +1,4 @@
+D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\enums\OrderStatusEnum.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\enums\YesOrNo.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\utils\HttpReq.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\utils\JsonUtils.java
@@ -21,7 +22,9 @@ D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\utils\I
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\utils\CookieUtils.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\Sid.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\utils\Serializes.java
+D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\utils\MobileEmailUtils.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\Test.java
+D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\enums\PayMethod.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\com\imooc\enums\Sex.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\WorkerIdStrategy.java
 D:\Projects\imooc_merge\foodie-div-common\src\main\java\org\n3r\idworker\Id.java

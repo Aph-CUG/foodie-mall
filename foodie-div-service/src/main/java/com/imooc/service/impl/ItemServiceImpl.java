@@ -3,6 +3,7 @@ package com.imooc.service.impl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.imooc.enums.CommentLevel;
+import com.imooc.enums.YesOrNo;
 import com.imooc.mapper.*;
 import com.imooc.pojo.*;
 import com.imooc.pojo.vo.CommentLevelCountsVO;
@@ -169,6 +170,7 @@ public class ItemServiceImpl implements ItemService {
     }
 
     @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
     public List<ShopcartVO> queryItemsBySpecIds(String specIds) {
         String ids[] = specIds.split(",");
         List<String> specIdsList = new ArrayList<>();
@@ -178,6 +180,38 @@ public class ItemServiceImpl implements ItemService {
         return itemsMapperCustom.queryItemsBySpecIds(specIdsList);
 
 
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public ItemsSpec queryItemsSpecById(String specId) {
+        return itemsSpecMapper.selectByPrimaryKey(specId);
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.SUPPORTS)
+    public String queryItemMainImgById(String itemId) {
+        ItemsImg itemsImg = new ItemsImg();
+        itemsImg.setItemId(itemId);
+        itemsImg.setIsMain(YesOrNo.YES.type);
+        ItemsImg result = itemsImgMapper.selectOne(itemsImg);
+        return result != null ? result.getUrl() : "";
+    }
+
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public void decreaseItemSpecStock(String specId, int buyCounts) {
+        //查询库存  -->  判断库存看是否够         （高并发条件下，超卖现象）
+        // synchronized  ？ 效率低下  集群下无用
+        // 锁数据库？ 性能低下
+        //分布式锁  zookeeper redis
+        //lockUtil.getLock()  --加锁
+        //lockUtil.unLock()   --解锁
+        //使用乐观锁与事务回滚 （重点看）
+        int result = itemsMapperCustom.decreaseItemSpecStock(specId, buyCounts);
+        if(result != 1) {
+            throw new RuntimeException("订单创建失败, 原因：库存不足");
+        }
     }
 
     private PagedGridResult setterPagedGrid(List<?> list, Integer page ) {
